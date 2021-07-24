@@ -1,0 +1,42 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+choice1 = input("To your left is a path that seems to lead into the jungle. To the right, there's a cave shaped like a skull. Do you go left or right?\n").lower()
+if choice1 == "left":
+  choice2 = input("As you walk further into the jungle, you come across a lake. It's teeming with alligators. They looks like they're sleeping though... do you swim or wait?").lower()
+  if choice2 == "wait":
+    choice3 = input("As you wait for the crocodiles to hopefully wake and walk away, you are suddenly ambushed by the island natives and knocked out. When you come to your senses, you are tied to a chair in a dimly lit room. You're able to free yourself. In front of you, there are three doors: red, blue, and yellow. What color door do you open, or do you do you wait?").lower()
+    if choice3 == "red":
+      print("You open the red door. It's a door to hell! You are dragged in by The Devil and burned alive.\nGame Over. Reset the adventure to try again.")
+    elif choice3 == "blue":
+      print("You open the blue door. Medusa and her Gorgon sisters eye you hungrily and turn you to stone. You can't feel the pain, but you can see them chipping away at you and eating your now rock hard abs.\nGame Over. Reset the adventure to try again.")
+    elif choice3 == "yellow":
+      print("You open the yellow door. Treasure! It's a gold dubloon pool with chests, jewels, and relics strewn all about. You dive in and take a swim. You win!")
+    else:
+      print("You should have opened a door. The natives return and inject you with a liquid. You feel the world begin to fade. Before you slip away, you notice your body become green and scaly... what are you becoming?\nGame Over. Reset the adventure to try again.")
+  else:
+    print("The crocodiles remain fast asleep as you swim. Nice and easy, you're almost at the end! Suddenly a giant catfish arises from the lake and swallows you whole.\nGame Over. Reset the adventure to try again.")
+else: 
+  print("You suddenly fall into a hole filled with spikes.\nGame Over. Reset the adventure to try again.")
+  
