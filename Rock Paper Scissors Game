@@ -1,0 +1,43 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+choices = [rock, paper, scissors]
+pick = int(input("What do you choose? Type 0 for rock, 1 for paper, or 2 for scissors.\n"))
+cpu = random.randint(0,2)
+
+if pick == 0 and cpu == 2:
+    result = "You win! :D"
+elif cpu == 0 and pick == 2:
+    result = "You lose... :("
+elif cpu > pick:
+    result = "You lose... :("
+elif pick > cpu:
+    result = "You win! :D"
+else:
+  result = "It's a draw!"
+
+print(f"You chose:\n{choices[pick]}\nComputer chose:\n{choices[cpu]}\n{result}")
